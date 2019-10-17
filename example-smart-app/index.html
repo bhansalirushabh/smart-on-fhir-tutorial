@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-    <title>Example-SMART-App</title>
+    <title>Example-SMART-App-1</title>
 
     <link rel='stylesheet' type='text/css' href='./src/css/example-smart-app.css'>
     <!--
@@ -47,6 +47,10 @@
           <th>Height:</th>
           <td id='height'></td>
         </tr>
+          <tr>
+          <th>Weight:</th>
+          <td id='weight'></td>
+        </tr>
         <tr>
           <th>Systolic Blood Pressure:</th>
           <td id='systolicbp'></td>
@@ -65,6 +69,7 @@
           <td id='hdl'></td>
         </tr>
       </table>
+      <p>Time: 6:50 pm</p>
     </div>
     <!-- Required JS files to enable this page to embed within an MPage -->
     <!--
@@ -89,7 +94,6 @@
         function(p) {
           drawVisualization(p);
         },
-
         //Display 'Failed to call FHIR Service' if extractData failed
         function() {
           $('#loading').hide();
